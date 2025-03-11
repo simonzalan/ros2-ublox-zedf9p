@@ -1,6 +1,6 @@
 ublox_gps_node:
   ros__parameters:
-    debug: 0                    # Range 0-4 (0 means no debug statements will print)
+    debug: 4                    # Range 0-4 (0 means no debug statements will print)
     device: "tcp://localhost:5433"
     frame_id: gps
     uart1:
