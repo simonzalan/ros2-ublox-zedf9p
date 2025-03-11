@@ -358,13 +358,13 @@ void UbloxNode::getRosParams() {
   meas_rate_ = 1000 / rate_;
 
   // activate/deactivate any config
-  this->declare_parameter("config_on_startup", true);
+  this->declare_parameter("config_on_startup", false);
   this->declare_parameter("raw_data", false);
   this->declare_parameter("clear_bbr", false);
   this->declare_parameter("save_on_shutdown", false);
-  this->declare_parameter("use_adr", true);
+  this->declare_parameter("use_adr", false);
 
-  this->declare_parameter("sv_in.reset", true);
+  this->declare_parameter("sv_in.reset", false);
   this->declare_parameter("sv_in.min_dur", 0);
   this->declare_parameter("sv_in.acc_lim", 0.0);
 
