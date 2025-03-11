@@ -50,7 +50,7 @@ const std::chrono::milliseconds Gps::default_timeout_ =
     std::chrono::milliseconds(
         static_cast<int>(Gps::kDefaultAckTimeout * 1000));
 
-Gps::Gps(int debug, const rclcpp::Logger& logger) : configured_(false), save_on_shutdown_(false), config_on_startup_flag_(false), debug_(debug), callbacks_(debug), logger_(logger) {
+Gps::Gps(int debug, const rclcpp::Logger& logger) : configured_(false), save_on_shutdown_(false), config_on_startup_flag_(true), debug_(debug), callbacks_(debug), logger_(logger) {
   subscribeAcks();
 }
 
