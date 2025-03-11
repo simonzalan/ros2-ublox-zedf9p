@@ -1,7 +1,7 @@
 ublox_gps_node:
   ros__parameters:
     debug: 0                    # Range 0-4 (0 means no debug statements will print)
-    device: /dev/ttyGPS
+    device: /dev/ttyGPS_2
     frame_id: gps
     gnss:
       glonass: false
