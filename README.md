@@ -51,7 +51,7 @@ Source and build again.
 
 ## Options
 The `ublox_gps` node supports the following parameters for all products and firmware versions:
-* `device`: Path to the device port. Defaults to `/dev/ttyV0`.
+* `device`: Path to the device port. Defaults to `localhost:5433`.
 * `raw_data`: Whether the device is a raw data product. Defaults to false. Firmware <= 7.03 only.
 * `load`: Parameters for loading the configuration to non-volatile memory. See `ublox_msgs/CfgCFG.msg`
     * `load/mask`: uint32_t. Mask of the configurations to load.
