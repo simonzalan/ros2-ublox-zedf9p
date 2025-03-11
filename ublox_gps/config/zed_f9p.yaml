@@ -4,7 +4,7 @@ ublox_gps_node:
     device: tcp://localhost:5433
     frame_id: gps
     uart1:
-      baudrate: 460800
+      baudrate: 115200
     gnss:
       glonass: false
       beidou: false
