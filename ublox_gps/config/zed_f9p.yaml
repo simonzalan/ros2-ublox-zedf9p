@@ -3,8 +3,6 @@ ublox_gps_node:
     debug: 0                    # Range 0-4 (0 means no debug statements will print)
     device: /dev/ttyGPS
     frame_id: gps
-    uart1:
-      baudrate: 115200
     gnss:
       glonass: false
       beidou: false
